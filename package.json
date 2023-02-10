@@ -1,0 +1,22 @@
+{
+  "name": "use-negative-indexes",
+  "version": "1.0.0",
+  "description": "Add this to your project as the README suggests if you'd like to be able to use negative indexes",
+  "main": "negative-indexes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricFithian/use-negative-indexes.git"
+  },
+  "keywords": [
+    "negative-indexes", "indexing", "javascript-negative-indexes"
+  ],
+  "author": "Eric Fithian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricFithian/use-negative-indexes/issues"
+  },
+  "homepage": "https://github.com/EricFithian/use-negative-indexes#readme"
+}
