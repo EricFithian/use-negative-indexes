@@ -13,20 +13,22 @@ $ npm install use-negative-indexes
 ```
 import negativeIndexes from 'use-negative-indexes';
 
-// Adds negative array index support to any given array
-const myFeelings = negative(['😂', '😭', '❤️', '🤣', ['🔥', '😍', ['🥺', '🥰']]]);
+const myFeelings = ['😂', '😭', '❤️', '🤣', ['🔥', '😍', ['🥺', '🥰']]];
 
 // Get the last item of the most deeply nested array
+
+
 console.log(negativeIndexes(myFeelings, -1, -1, -1));
 //=> '🥰'
-OR console.log(negativeIndexes(myFeelings, -1, -1, 1));
+console.log(negativeIndexes(myFeelings, -1, -1, 1));
 //=> '🥰'
-OR console.log(negativeIndexes(myFeelings, "-1", "-1", "1"));
+console.log(negativeIndexes(myFeelings, "-1", -1, 1));
 //=> '🥰'
-OR console.log(negativeIndexes(myFeelings, "-1", "2", -1));
+console.log(negativeIndexes(myFeelings, "-1", "2", -1));
 //=> '🥰'
-OR console.log(negativeIndexes(myFeelings, -1, -1, -1));
+console.log(negativeIndexes(myFeelings, -1, -1, -1));
 //=> '🥰'
+
 
 ```
 
