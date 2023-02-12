@@ -1,6 +1,6 @@
 function negativeIndexes(arr, ...indexes) {
     if (!Array.isArray(arr)) {
-		return 'Expected an array';
+		throw new TypeError('Expected an array');
 	};
     let updatedOutput;
     if(!indexes.length) return arr;
@@ -20,19 +20,21 @@ function negativeIndexes(arr, ...indexes) {
                 }
             }
         } else {
-            return `Expected a string or a number at argument ${i + 2} but got ${typeof indexes[i]}`;
+            throw new TypeError(`Expected a string or a number at argument ${i + 2} but got ${typeof indexes[i]}`);
         }
     }
     return updatedOutput;
 }
 
-let arr = ["hello", "world", "this", "is", "my", "test", ["Another", "array", "nested", ["the", "other", "arrays"]]];
-console.log(negativeIndexes(arr, -2));
-console.log(negativeIndexes(arr, -1, -1, -2));
+// let arr = ["hello", "world", "this", "is", "my", "test", ["Another", "array", "nested", ["the", "other", "arrays"]]];
+// console.log(negativeIndexes(arr, -2));
+// console.log(negativeIndexes(arr, -1, 3, -2));
+// console.log(negativeIndexes(arr, "-1", "3", -2));
+// console.log(negativeIndexes(arr, -1, 3, -3));
 
 
 // let test = negativeIndexes(arr1 + `$`);
 // console.log(test);
 // console.log(typeof test);
 
-// export default negativeIndexes;
+export default negativeIndexes;
