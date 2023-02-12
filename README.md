@@ -17,15 +17,15 @@ import negativeIndexes from 'use-negative-indexes';
 const myFeelings = negative(['😂', '😭', '❤️', '🤣', ['🔥', '😍', ['🥺', '🥰']]]);
 
 // Get the last item of the most deeply nested array
-console.log(myFeelings, -1], -1, -1);
+console.log(negativeIndexes(myFeelings, -1, -1, -1));
 //=> '🥰'
-OR console.log(myFeelings, -1, -1, 1);
+OR console.log(negativeIndexes(myFeelings, -1, -1, 1));
 //=> '🥰'
-OR console.log(myFeelings, "-1", "-1", "1");
+OR console.log(negativeIndexes(myFeelings, "-1", "-1", "1"));
 //=> '🥰'
-OR console.log(myFeelings, "-1", "2", -1);
+OR console.log(negativeIndexes(myFeelings, "-1", "2", -1));
 //=> '🥰'
-OR console.log(myFeelings, -1, -1, -1);
+OR console.log(negativeIndexes(myFeelings, -1, -1, -1));
 //=> '🥰'
 
 ```
