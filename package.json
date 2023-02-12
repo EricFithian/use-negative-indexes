@@ -11,7 +11,7 @@
     "url": "git+https://github.com/EricFithian/use-negative-indexes.git"
   },
   "keywords": [
-    "negative-indexes", "indexing", "javascript-negative-indexes"
+    "negative-indexes", "indexing", "javascript-negative-indexes", "string indexes", "negative and positive indexes support", "array indexing"
   ],
   "author": "Eric Fithian",
   "license": "ISC",
