@@ -28,5 +28,20 @@ OR console.log(myFeelings["-1"]["2"][-1]);
 OR console.log(myFeelings[-1][-1][-1]);
 //=> '🥰'
 
-// Hopefully this helps for all those Python and other developers who love passing in negative indexes or positive indexes for their nested arrays or who have hit errors with passing in strings on accident for indexes to arrays!
 ```
+
+Please note that you may have to run a local file for Javascript by adding to your package.json so it matches what I have below:
+
+```
+{
+  "type": "module",
+  "dependencies": {
+    "use-negative-indexes": "^1.0.0"
+  }
+}
+```
+
+And then run the file by using this command in the terminal:
+```node --experimental-modules fileName.js``` simply overwriting fileName.js to whatever the name of the file you're trying to run is. 
+
+Hopefully this helps for all those Python and other developers who love passing in negative indexes or positive indexes for their nested arrays or who have hit errors with passing in strings on accident for indexes to arrays!

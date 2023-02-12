@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/EricFithian/use-negative-indexes/issues"
   },
-  "homepage": "https://github.com/EricFithian/use-negative-indexes#readme"
+  "homepage": "https://github.com/EricFithian/use-negative-indexes#readme",
+  "type": "module"
 }
