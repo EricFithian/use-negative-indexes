@@ -1,6 +1,6 @@
 function negativeIndexes(arr, ...indexes) {
     if (!Array.isArray(arr)) {
-		throw new TypeError('Expected an array');
+		throw new TypeError('Expected an array at argument 1');
 	};
     if(!indexes.length) return arr;
     let updatedOutput;
