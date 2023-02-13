@@ -1,10 +1,13 @@
 function negativeIndexes(arr, ...indexes) {
     if (!Array.isArray(arr)) {
-		throw new TypeError('Expected an array at argument 1');
+		throw new TypeError(`Expected an array at argument 1 but got ${typeof arr}`);
 	};
     if(!indexes.length) return arr;
     let updatedOutput;
     for(let i = 0; i < indexes.length; i++) {
+        if (updatedOutput !== 'undefined' && !Array.isArray(updatedOutput[i])) {
+            throw new TypeError(`Expected an array at argument ${i + 2} but got ${typeof updatedOutput[i]}`);
+        };
         if(typeof indexes[i] === 'string' || typeof indexes[i] === 'number') {
             if(typeof indexes[i] === 'string') {
                 let value = parseInt(indexes[i])
