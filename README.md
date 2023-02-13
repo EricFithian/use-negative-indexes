@@ -1,4 +1,4 @@
-# Use Negative Indexex supports array[-1][-3][3]
+# Use Negative Indexes Supports Negative and Positive Array Arguments Along With Supporting String Arguments. It Makes Dealing With Nesting Issues With Some Start And Some End Arguments A Breeze
 
 The goal of this project was to add an ability to negatively index arrays while also being used as material to help my cohorts understand the importance of open source and how it can benefit them and every other developer.
 
@@ -38,7 +38,7 @@ Please note that you may have to run a local file for Javascript by adding to yo
 {
   "type": "module",
   "dependencies": {
-    "use-negative-indexes": "^1.0.0"
+    "use-negative-indexes": "^1.1.3"
   }
 }
 ```
@@ -46,4 +46,4 @@ Please note that you may have to run a local file for Javascript by adding to yo
 And then run the file by using this command in the terminal:
 ```node --experimental-modules fileName.js``` simply overwriting fileName.js to whatever the name of the file you're trying to run is. 
 
-Hopefully this helps for all those Python and other developers who love passing in negative indexes or positive indexes for their nested arrays or who have hit errors with passing in strings on accident for indexes to arrays!
+Hopefully this helps for all those Javascript developers with experience in Python and other languagues that inherently support negative indexing who love passing in negative indexes or positive indexes for their nested arrays or who have hit errors with passing in strings on accident for indexes to arrays!
