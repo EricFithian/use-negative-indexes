@@ -2,15 +2,16 @@ function negativeIndexes(arr, ...indexes) {
     if (!Array.isArray(arr)) {
 		throw new TypeError('Expected an array');
 	};
-    let updatedOutput;
     if(!indexes.length) return arr;
+    let updatedOutput;
     for(let i = 0; i < indexes.length; i++) {
         if(typeof indexes[i] === 'string' || typeof indexes[i] === 'number') {
             if(typeof indexes[i] === 'string') {
-                if(parseInt(indexes[i]) < 0) {
-                    typeof updatedOutput === 'undefined' ? updatedOutput = arr[arr.length + parseInt(indexes[i])] : updatedOutput = updatedOutput[updatedOutput.length + parseInt[indexes[i]]];
+                let value = parseInt(indexes[i])
+                if(value < 0) {
+                    typeof updatedOutput === 'undefined' ? updatedOutput = arr[arr.length + value] : updatedOutput = updatedOutput[updatedOutput.length + value];
                 } else {
-                    typeof updatedOutput === 'undefined' ?updatedOutput = arr[parseInt(indexes[i])] : updatedOutput = updatedOutput[parseInt(indexes[i])];
+                    typeof updatedOutput === 'undefined' ?updatedOutput = arr[value] : updatedOutput = updatedOutput[value];
                 }
             } else {
                 if(indexes[i] < 0) {
@@ -26,11 +27,20 @@ function negativeIndexes(arr, ...indexes) {
     return updatedOutput;
 }
 
-// let arr = ["hello", "world", "this", "is", "my", "test", ["Another", "array", "nested", ["the", "other", "arrays"]]];
-// console.log(negativeIndexes(arr, -2));
-// console.log(negativeIndexes(arr, -1, 3, -2));
-// console.log(negativeIndexes(arr, "-1", "3", -2));
-// console.log(negativeIndexes(arr, -1, 3, -3));
+const myFeelings = ['😂', '😭', '❤️', '🤣', ['🔥', '😍', ['🥺', '🥰']]];
+
+// Get the last item of the most deeply nested array
+
+// console.log(negativeIndexes(myFeelings, -1, -1, -1));
+// //=> '🥰'
+// console.log(negativeIndexes(myFeelings, -1, -1, 1));
+// //=> '🥰'
+// console.log(negativeIndexes(myFeelings, "-1", -1, 1));
+// //=> '🥰'
+// console.log(negativeIndexes(myFeelings, "-1", "2", "-1"));
+// //=> '🥰'
+// console.log(negativeIndexes(myFeelings, -1, -1, -1));
+// //=> '🥰'
 
 
 // let test = negativeIndexes(arr1 + `$`);
