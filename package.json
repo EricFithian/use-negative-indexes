@@ -1,6 +1,6 @@
 {
   "name": "use-negative-indexes",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Add this to your project as the README suggests if you'd like to be able to use negative indexes",
   "main": "negative-indexes.js",
   "scripts": {

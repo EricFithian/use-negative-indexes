@@ -26,10 +26,8 @@ console.log(negativeIndexes(myFeelings, "-1", -1, 1));
 //=> '🥰'
 console.log(negativeIndexes(myFeelings, "-1", "2", -1));
 //=> '🥰'
-console.log(negativeIndexes(myFeelings, -1, -1, -1));
+console.log(negativeIndexes(myFeelings, -1, -1, "-1"));
 //=> '🥰'
-
-
 ```
 
 Please note that you may have to run a local file for Javascript by adding to your package.json so it matches what I have below:
@@ -38,7 +36,7 @@ Please note that you may have to run a local file for Javascript by adding to yo
 {
   "type": "module",
   "dependencies": {
-    "use-negative-indexes": "^1.2.2"
+    "use-negative-indexes": "^1.2.3"
   }
 }
 ```
@@ -46,4 +44,4 @@ Please note that you may have to run a local file for Javascript by adding to yo
 And then run the file by using this command in the terminal:
 ```node --experimental-modules fileName.js``` simply overwriting fileName.js to whatever the name of the file you're trying to run is. 
 
-Hopefully this helps for all those Javascript developers with experience in Python and other languagues that inherently support negative indexing who love passing in negative indexes or positive indexes for their nested arrays or who have hit errors with passing in strings on accident for indexes to arrays!
+Hopefully this helps for all those Javascript developers with experience in Python and other languagues that natively support negative indexing and who love passing in negative indexes or positive indexes to their nested arrays or who have hit errors with passing in strings on accident for indexes to arrays!
