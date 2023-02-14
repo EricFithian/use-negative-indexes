@@ -30,23 +30,4 @@ function negativeIndexes(arr, ...indexes) {
     return updatedOutput;
 }
 
-// const myFeelings = ['😂', '😭', '❤️', '🤣', ['🔥', '😍', ['🥺', '🥰']]];
-
-// // Get the last item of the most deeply nested array
-
-// console.log(negativeIndexes(myFeelings, -1, -1, -1));
-// //=> '🥰'
-// console.log(negativeIndexes(myFeelings, -1, -1, 1));
-// //=> '🥰'
-// console.log(negativeIndexes(myFeelings, "-1", -1, 1));
-// //=> '🥰'
-// console.log(negativeIndexes(myFeelings, "-1", "2", "-1"));
-// //=> '🥰'
-// console.log(negativeIndexes(myFeelings, "2"));
-// //=> '❤️'
-// console.log(negativeIndexes(myFeelings, -3));
-// //=> '❤️'
-// console.log(negativeIndexes(myFeelings, "-3"));
-// //=> '❤️'
-
 export default negativeIndexes;

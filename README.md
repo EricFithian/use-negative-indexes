@@ -1,4 +1,5 @@
-# Use Negative Indexes Supports Negative and Positive Array Arguments Along With Supporting String Arguments for the Indexes. It Makes Dealing With Nesting Issues With Some Start And Some End Arguments A Breeze
+# Use Negative Indexes 
+## Supports Negative and Positive Array Arguments Along With Supporting String Arguments for the Indexes. It Makes Dealing With Nesting Issues With Some Start And Some End Arguments A Breeze
 
 The goal of this project was to add an ability to negatively index arrays while also being used as material to help my cohorts understand the importance of open source and how it can benefit them and every other developer.
 
