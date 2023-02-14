@@ -12,12 +12,11 @@ $ npm install use-negative-indexes
 ### Usage
 
 ```
-import negativeIndexes from 'use-negative-indexes';
+import negativeIndexes from "./negative-indexes.js";
 
 const myFeelings = ['😂', '😭', '❤️', '🤣', ['🔥', '😍', ['🥺', '🥰']]];
 
 // Get the last item of the most deeply nested array
-
 
 console.log(negativeIndexes(myFeelings, -1, -1, -1));
 //=> '🥰'
@@ -25,10 +24,22 @@ console.log(negativeIndexes(myFeelings, -1, -1, 1));
 //=> '🥰'
 console.log(negativeIndexes(myFeelings, "-1", -1, 1));
 //=> '🥰'
-console.log(negativeIndexes(myFeelings, "-1", "2", -1));
+console.log(negativeIndexes(myFeelings, "-1", "2", "-1"));
 //=> '🥰'
-console.log(negativeIndexes(myFeelings, -1, -1, "-1"));
-//=> '🥰'
+console.log(negativeIndexes(myFeelings, "2"));
+//=> '❤️'
+console.log(negativeIndexes(myFeelings, -3));
+//=> '❤️'
+console.log(negativeIndexes(myFeelings, "-3"));
+//=> '❤️'
+// console.log(negativeIndexes(myFeelings, "-3", -1));
+//=> 'TypeError: Expected an array at argument 3 but got string'
+console.log(negativeIndexes(myFeelings, -1, -3));
+//=> '🔥'
+console.log(negativeIndexes(myFeelings, "-1", "-3"));
+//=> '🔥'
+console.log(negativeIndexes(myFeelings, "-1", -1, "0"));
+//=> '🥺'
 ```
 
 Please note that you may have to run a local file for Javascript by adding to your package.json so it matches what I have below:
@@ -37,7 +48,7 @@ Please note that you may have to run a local file for Javascript by adding to yo
 {
   "type": "module",
   "dependencies": {
-    "use-negative-indexes": "^1.3.0"
+    "use-negative-indexes": "^1.3.2"
   }
 }
 ```
